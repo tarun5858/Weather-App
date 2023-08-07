@@ -11,7 +11,7 @@ let target = "jaipur";
 
 const fetchData = async (target) => {
   try {
-    const url = `http://api.weatherapi.com/v1/current.json?key=e71c3688b7de4387b85140701232807&q=${target}`;
+    const url = `https://api.weatherapi.com/v1/current.json?key=e71c3688b7de4387b85140701232807&q=${target}`;
     const response = await fetch(url);
     const data = await response.json();
     console.log(data);
